@@ -1,0 +1,10 @@
+com\mypoc\Client.class
+com\mypoc\ClientDaoImpl.class
+com\mypoc\mvc\AddController.class
+com\mypoc\POCServlet.class
+com\mypoc\ClientBo.class
+com\mypoc\mvc\UpdateController.class
+com\mypoc\mvc\DeleteController.class
+com\mypoc\mvc\ListController.class
+com\mypoc\ClientDao.class
+com\mypoc\ClientBoImpl.class
