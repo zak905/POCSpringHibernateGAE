@@ -22,7 +22,7 @@ public class DeleteController {
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)
 	public String deleteClient(@ModelAttribute("Client")Client client){
 		ApplicationContext appContext = 
-		    	  new FileSystemXmlApplicationContext("src\\main\\resources\\BeanLocations.xml");
+		    	  new FileSystemXmlApplicationContext("WEB-INF/classes/BeanLocations.xml");
 		 
 		    	ClientBo clientBo = (ClientBo)appContext.getBean("clientBo");
 		    	clientBo.Delete(client);
