@@ -19,7 +19,7 @@ public class AddController {
 	public String addClient(@ModelAttribute("Client") Client client){
 		// Code for adding Client
 		ApplicationContext appContext = 
-		    	  new FileSystemXmlApplicationContext("src\\main\\resources\\BeanLocations.xml");
+		    	  new FileSystemXmlApplicationContext("WEB-INF/classes/BeanLocations.xml");
 		 
 		    	ClientBo clientBo = (ClientBo)appContext.getBean("clientBo");
 		    	clientBo.Add(client);
