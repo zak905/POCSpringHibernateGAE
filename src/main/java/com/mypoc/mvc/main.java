@@ -15,9 +15,9 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("C:\\Users\\zakaria\\Documents\\HibernateSpringGAEIntegration1\\src\\main\\resourcesBeanLocations.xml");
+		//System.out.println("C:\\Users\\zakaria\\Documents\\HibernateSpringGAEIntegration1\\src\\main\\resourcesBeanLocations.xml");
 		    	ApplicationContext appContext = 
-		    	  new FileSystemXmlApplicationContext("src\\main\\resources\\BeanLocations.xml");
+		    	  new FileSystemXmlApplicationContext("WEB-INF/classes/BeanLocations.xml");
 		 
 		    	ClientBo clientBo = (ClientBo)appContext.getBean("clientBo");
 		    	/*Client client = new Client();
