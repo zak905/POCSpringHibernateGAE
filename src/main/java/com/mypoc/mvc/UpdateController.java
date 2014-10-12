@@ -20,7 +20,7 @@ public class UpdateController {
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
 	public String deleteClient(@ModelAttribute("Client")Client client){
 		ApplicationContext appContext = 
-		    	  new FileSystemXmlApplicationContext("src\\main\\resources\\BeanLocations.xml");
+		    	  new FileSystemXmlApplicationContext("WEB-INF/classes/BeanLocations.xml");
 		 
 		    	ClientBo clientBo = (ClientBo)appContext.getBean("clientBo");
 		    	clientBo.Update(client, client.getId());
@@ -33,7 +33,7 @@ public class UpdateController {
 	@RequestMapping(value = "/update", method = RequestMethod.GET)
 	public ModelAndView viewDeleteForm(@ModelAttribute("Client")Client client){
 		ApplicationContext appContext = 
-		    	  new FileSystemXmlApplicationContext("src\\main\\resources\\BeanLocations.xml");
+		    	  new FileSystemXmlApplicationContext("WEB-INF/classes/BeanLocations.xml");
 		 
 		    	ClientBo clientBo = (ClientBo)appContext.getBean("clientBo");
 		        List<Client> list = clientBo.List();
