@@ -20,7 +20,7 @@ public class ListController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ModelAndView listClient(){
 		ApplicationContext appContext = 
-		    	  new FileSystemXmlApplicationContext("src\\main\\resources\\BeanLocations.xml");
+		    	  new FileSystemXmlApplicationContext("WEB-INF/classes/BeanLocations.xml");
 		 
 		    	ClientBo clientBo = (ClientBo)appContext.getBean("clientBo");
 		    	
